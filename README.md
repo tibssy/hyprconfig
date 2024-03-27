@@ -1,6 +1,9 @@
 # hyprconfig
 A GUI Control Center for Hyprland (Work in Progress)
 
+![swappy-20240327_031451](https://github.com/tibssy/hyprconfig/assets/72749248/8a4eaf18-c79a-4c36-8189-59621bc3710a)
+
+
 ## Description:
 hyprconfig is a user-friendly graphical user interface (GUI) control center designed to simplify configuration management for Hyprland. Built with Python and the Flet library, it offers a smooth and interactive experience for users to adjust Hyprland settings.
 
