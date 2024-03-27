@@ -82,13 +82,13 @@ class OptionColorPicker(OptionControl):
         self.color_button = None
 
     def build(self):
-        color_selector = ColorSelector(on_dismiss=self.on_color)
+        color_selector = ColorSelector(on_color=self.on_color_change)
         color = f'#{self.value[-6:]}' if self.value != 'unset' else '#000000'
         self.color_button = RoundedElevatedButton(bgcolor=color, radius=6, scale=0.9, on_click=color_selector.open_dialog)
         return ft.CupertinoListTile(title=self.title, subtitle=self.description, trailing=self.color_button, notched=True)
 
-    def on_color(self, e):
-        self.on_value_change(self.color_button.bgcolor, f'#{self.value[-6:]}')
+    def on_color_change(self, color):
+        self.on_value_change(color, f'#{self.value[-6:]}')
 
 
 def get_options():
