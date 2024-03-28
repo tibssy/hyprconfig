@@ -12,7 +12,7 @@ class OptionControl(ft.UserControl):
         self.title = ft.Text(self.get_title())
 
     def get_title(self):
-        return self.name.value.replace('_', ' ').title()
+        return self.name.value.replace('_', ' ').replace('.', ' ').title()
 
     def on_value_change(self, current_value, default_value):
         if current_value != default_value:
@@ -92,7 +92,7 @@ class OptionColorPicker(OptionControl):
 
 
 def get_options():
-    with open('available_options.json', encoding='utf-8') as options_file:
+    with open('options_v0.37.0.json', encoding='utf-8') as options_file:
         return json.load(options_file)
 
 
