@@ -1,5 +1,5 @@
 import flet as ft
-from color_selector import ColorSelector, RoundedElevatedButton
+from flet_color_selector import ColorSelector, RoundedElevatedButton
 import json
 import time
 
